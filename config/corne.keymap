@@ -20,26 +20,10 @@
 
             display-name = "Base";
             bindings = <
-&kp ESCAPE             &kp Q             &kp W  &lt 5 E  &kp R  &kp T        &kp Y    &kp U  &lt 5 I      &kp O    &kp P                 &kp BSPC
-&mt LCTRL TAB          &mt LEFT_SHIFT A  &kp S  &lt 5 D  &kp F  &kp G        &kp H    &kp J  &lt 5 K      &kp L    &mt RIGHT_SHIFT SEMI  &mt RIGHT_CONTROL SQT
-&mt LEFT_ALT CAPSLOCK  &mt LEFT_GUI Z    &kp X  &lt 5 C  &kp V  &kp B        &kp N    &kp M  &lt 5 COMMA  &kp DOT  &mt RIGHT_GUI FSLH    &mt RIGHT_ALT BSLH
-                                                &mo 1    &mo 2  &kp SPACE    &kp RET  &mo 3  &mo 4
-            >;
-        };
-
-        lower_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
-            display-name = "Lower";
-            bindings = <
-&kp GRAVE  &none   &none  &none   &none   &none     &kp INSERT  &kp SCROLLLOCK  &kp PAUSE_BREAK  &none      &none   &kp DELETE
-&trans     &trans  &none  &none   &none   &none     &kp LEFT    &kp DOWN        &kp UP           &kp RIGHT  &trans  &trans
-&trans     &trans  &none  &none   &none   &none     &kp HOME    &kp PAGE_DOWN   &kp PAGE_UP      &kp END    &trans  &trans
-                          &trans  &trans  &trans    &trans      &trans          &trans
+&kp ESCAPE     &kp Q             &kp W  &lt 5 E     &kp R  &kp T          &kp Y    &kp U  &lt 5 I      &kp O    &kp P                 &kp BSPC
+&mt LCTRL TAB  &mt LEFT_SHIFT A  &kp S  &lt 5 D     &kp F  &kp G          &kp H    &kp J  &lt 5 K      &kp L    &mt RIGHT_SHIFT SEMI  &mt RIGHT_CONTROL SQT
+&kp LEFT_ALT   &mt LEFT_GUI Z    &kp X  &lt 5 C     &kp V  &kp B          &kp N    &kp M  &lt 5 COMMA  &kp DOT  &mt RIGHT_GUI FSLH    &mt RIGHT_ALT BSLH
+                                        &caps_word  &mo 1  &lt 2 SPACE    &kp RET  &mo 3  &mo 4
             >;
         };
 
@@ -56,6 +40,22 @@
 &trans     &trans      &none  &none   &none   &none     &none   &kp N4  &kp N5  &kp N6  &trans  &trans
 &trans     &trans      &none  &none   &none   &none     &none   &kp N7  &kp N8  &kp N9  &trans  &trans
                               &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        lower_layer {
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+            //                    | GUI |     | SPC |   | ENT |     | ALT |
+
+            display-name = "Lower";
+            bindings = <
+&kp GRAVE  &none   &none  &none   &none   &none     &kp INSERT  &kp SCROLLLOCK  &kp PAUSE_BREAK  &none      &none   &kp DELETE
+&trans     &trans  &none  &none   &none   &none     &kp LEFT    &kp DOWN        &kp UP           &kp RIGHT  &trans  &trans
+&trans     &trans  &none  &none   &none   &none     &kp HOME    &kp PAGE_DOWN   &kp PAGE_UP      &kp END    &trans  &trans
+                          &trans  &trans  &trans    &trans      &trans          &trans
             >;
         };
 
