@@ -107,10 +107,10 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
 
         layer_5 {
             bindings = <
-&trans  &trans  &kp EQUAL    &trans  &kp UNDER   &trans    &trans  &kp LBRC  &trans  &kp RBRC  &trans  &trans
-&trans  &trans  &kp MINUS    &trans  &kp PLUS    &trans    &trans  &kp LPAR  &trans  &kp RPAR  &trans  &trans
-&trans  &trans  &kp K_PASTE  &trans  &kp K_COPY  &trans    &trans  &kp LBKT  &trans  &kp RBKT  &trans  &trans
-                             &trans  &trans      &trans    &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp PLUS     &kp EQUAL   &kp LBRC  &kp RBRC  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS    &kp UNDER   &kp LPAR  &kp RPAR  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp K_PASTE  &kp K_COPY  &kp LBKT  &kp RBKT  &trans  &trans
+                        &trans  &trans  &trans    &trans       &trans      &trans
             >;
         };
     };
